@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700');
+@import "partials/variables.scss";
+@import "partials/mixins.scss";
+@import "partials/normalize.scss";
+@import "partials/tpl-content";
+@import "partials/gdpr-cookies";
+@import "partials/404.scss";
+@import "partials/wpforms";
+@import "ie.scss";
+
+@import "base";
+@import "header";
+@import "slider";
+@import "sitemap";
+
+
+@import "home";
+@import "contact-us";
+@import "listings";
+@import "our-process";
+@import "faq";
+@import "testimonials";
+@import "about-us";
+@import "single-listing";
+
+@import "two-cols-image-content";
+
+@import "footer";

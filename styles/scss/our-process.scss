@@ -1,0 +1,60 @@
+.page-list-section {
+    background-image: linear-gradient(rgba($color: #00080B, $alpha: 0.6), rgba($color: #00080B, $alpha: 0.6)), url(../../images/our-process/our-process-bg.jpg); 
+
+    .page-list-wrap {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .page-list {
+        color: white;
+        border: 1px solid rgba($color: white, $alpha: 0.7);
+        height: 100%;
+
+        .content {
+            padding: 50px 40px 40px 40px;
+
+            h1 {
+                margin-bottom: 50px;
+            }
+        }
+
+        .testimonials {
+            background-image: url(../../images/icons/quote-left.svg), url(../../images/icons/quote-right.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: left 40px top 40px, right 40px bottom 40px;
+
+            h1 {
+                margin-bottom: 30px;
+            }
+
+            .name {
+                font-family: adobe-caslon-pro, serif;
+                font-size: 20px;
+                margin-top: 40px;
+            }
+        }
+
+        .link {
+            border-top: 1px solid rgba($color: white, $alpha: 0.7);
+            color: $l-blue;
+            background-color: black;
+            display: block;
+            padding: 23px;
+            font-weight: normal;
+
+            i {
+                margin-left: 15px;
+                font-size: 13px;
+            }
+
+            &:hover {
+                background-color: $l-blue;
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+    }
+}

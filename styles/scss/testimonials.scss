@@ -1,0 +1,78 @@
+.testimonials-wrap {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 70%;
+    margin: 0 auto;
+
+    .testimonials {
+        .content {
+            background-image: url(../../images/icons/quote-left-black.svg), url(../../images/icons/quote-right-black.svg);
+            background-size: 18px;
+            background-repeat: no-repeat;
+            background-position: left top, right bottom;
+            padding: 20px 40px;
+        }
+
+        img {
+            width: 130px;
+            height: 130px;
+        }
+
+        .name {
+            font-family: "BigCaslonMedium", serif;
+            font-size: 24px;
+        }
+    }
+}
+
+.testimonials-sectionv-v2 {
+    background-image: linear-gradient(rgba($color: #00080B, $alpha: 0.65), rgba($color: #00080B, $alpha: 0.65)), url(../../images/our-process/testimonials-bg-sm.jpg); 
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 0px;
+
+    .testimonials {
+        margin-bottom: 80px;
+
+        .content {
+            background-image: url(../../images/icons/quote-left.svg), url(../../images/icons/quote-right.svg);
+        }
+    }
+}
+
+// Phone
+@media (max-width: $screen-xs-max) {
+    .testimonials-wrap {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: auto;
+
+        .testimonials {
+            .content {
+                background-size: 13px;
+                padding: 20px 20px;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .name {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// Extra Small Phone
+@media (max-width: $screen-xs) {}
+
+// Tablet
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {}
+
+// Small Screen
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {}
+
+// Small Screen
+@media (min-width: $screen-lg) and (max-width: $screen-lg-max) {}

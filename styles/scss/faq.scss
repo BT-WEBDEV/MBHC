@@ -1,0 +1,22 @@
+#faq-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#faq {
+    background-color: white;
+    padding: 45px 30px 30px 30px;
+    
+    h1 {
+        margin-bottom: 30px;
+    }
+    a {
+        color: black;
+    }
+    i {
+        color: $l-blue;
+    }
+    .card .card-header {
+        padding: 15px 10px;
+    }
+}

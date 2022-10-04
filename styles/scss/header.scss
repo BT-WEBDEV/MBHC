@@ -1,0 +1,355 @@
+.logged-in {
+	.custom-navbar {
+		top: 32px;
+	}
+}
+
+.nav-space {
+	// margin-top: 95.95px;
+}
+
+.custom-navbar {
+	// background-color: white;
+	max-width: 1688px;
+	margin: 0 auto;
+	padding: 20px 100px;
+	background-color: rgba($color: #000000, $alpha: 0.8);
+	@include transition(all 0.5s ease);
+
+	.navbar-toggler {
+		padding: 0px 0px;
+	}
+
+	.logo {
+		width: 180px;
+	}
+
+	.nav-item {
+		margin: 0 15px;
+
+		.nav-link {
+			color: white;
+			text-transform: uppercase;
+			font-size: 15px;
+			@include transition(all 0.5s ease);
+
+			&:hover {
+				// font-weight: bold;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.nav-blue {
+		background-color: $blue;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-right: 0;
+	}
+
+	.active {
+		.nav-link {
+			font-weight: bold;
+		}
+	}
+}
+
+.nav-open {
+	background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+.nav-filled {
+	background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+.shrink {
+	background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+// Mobile
+@media (max-width: $screen-xs-max) {
+	.custom-navbar {
+		padding: 10px 15px;
+		text-align: center;
+		background-color: rgba($color: #000000, $alpha: 0.8);
+
+		.navbar-nav {
+			height: 100vh;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		.logo {
+			width: 130px;
+		}
+
+		.nav-item {
+			margin: 3px 0px;
+		}
+	}
+}
+
+// Tablet
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+	.custom-navbar {
+		padding: 10px 40px;
+		text-align: center;
+		background-color: rgba($color: #000000, $alpha: 0.8);
+
+		.navbar-nav {
+			height: 100vh;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		.logo {
+			width: 140px;
+		}
+
+		.nav-item {
+			margin: 3px 0px;
+		}
+	}
+}
+
+// Small Screen
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+	.custom-navbar {
+		padding: 15px 15px;
+
+		.nav-item {
+			margin: 0 7px;
+			.nav-link {
+				font-size: 13px;
+			}
+		}
+		.item27 {
+			display: none;
+		}
+
+		.logo {
+			width: 150px;
+		}
+	}
+}
+
+// Small Screen
+@media (min-width: $screen-lg) and (max-width: $screen-lg-max) {
+	.custom-navbar {
+		padding: 20px 20px;
+
+		.nav-item {
+			margin: 0 10px;
+			.nav-link {
+				font-size: 14px;
+			}
+		}
+
+		.logo {
+			width: 150px;
+		}
+	}
+}
+
+/* Skip to main content */
+a.skip-main {
+	left: -999px;
+	position: absolute;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	z-index: -999;
+}
+
+a.skip-main:focus,
+a.skip-main:active {
+	color: #fff;
+	background-color: #000;
+	left: auto;
+	top: auto;
+	width: 30%;
+	height: auto;
+	overflow: auto;
+	margin: 10px 35%;
+	padding: 5px;
+	border-radius: 15px;
+	border: 4px solid yellow;
+	text-align: center;
+	font-size: 1.2em;
+	z-index: 999;
+}
+
+/* Icon 1 */
+.animated-icon1,
+.animated-icon2,
+.animated-icon3 {
+	width: 30px;
+	height: 20px;
+	position: relative;
+	margin: 0px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+.animated-icon1 span,
+.animated-icon2 span,
+.animated-icon3 span {
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+.animated-icon1 span {
+	background: #e65100;
+}
+
+.animated-icon2 span {
+	background: #e3f2fd;
+}
+
+.animated-icon3 span {
+	background: white;
+}
+
+.animated-icon1 span:nth-child(1) {
+	top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+	top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+	top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+	top: 11px;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+	opacity: 0;
+	left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+	top: 11px;
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+}
+
+/* Icon 3*/
+
+.animated-icon2 span:nth-child(1) {
+	top: 0px;
+}
+
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
+	top: 10px;
+}
+
+.animated-icon2 span:nth-child(4) {
+	top: 20px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+	top: 11px;
+	width: 0%;
+	left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+	top: 11px;
+	width: 0%;
+	left: 50%;
+}
+
+/* Icon 4 */
+
+.animated-icon3 span:nth-child(1) {
+	top: 0px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(2) {
+	top: 10px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(3) {
+	top: 20px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.animated-icon3.open span:nth-child(1) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 0px;
+	left: 8px;
+}
+
+.animated-icon3.open span:nth-child(2) {
+	width: 0%;
+	opacity: 0;
+}
+
+.animated-icon3.open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 21px;
+	left: 8px;
+}

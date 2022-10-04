@@ -1,0 +1,110 @@
+.gka-two-cols-image-content {
+    background-color: #EDEDED;
+    h1 {
+        color: $l-blue;
+        margin-bottom: 25px;
+    }
+
+    .btn-container {
+        margin-top: 35px;
+    }
+
+    .left-col,
+    .right-col {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .right-col {
+        background-position: right bottom;
+        background-image: url(../../images/two-cols-bg-right.png);
+    }
+
+    .left-col {
+        background-position: left bottom;
+        background-image: url(../../images/two-cols-bg-left.png);
+    }
+
+    .image-wrap {
+        padding-left: 0px;
+        padding-right: 0px;
+        .image {
+            height: 100%;
+            overflow: hidden;
+            img {
+                @include img-fit;
+            }
+        }
+    }
+
+    .content-wrap {
+        .content {
+            padding: 15px 10%;
+        }
+    }
+}
+
+#post-25 {
+    .gka-two-cols-image-content {
+        padding: 30px 100px;
+
+        .right-col,
+        .left-col {
+            background-image: none;
+        }
+    }
+}
+
+
+// Phone
+@media (max-width: $screen-xs-max) {
+    .gka-two-cols-image-content {
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        .btn-container {
+            margin-top: 15px;
+        }
+
+        .content-wrap {
+            .content {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    #post-25 {
+        .gka-two-cols-image-content {
+            padding: 0px 0px;
+    
+            .right-col,
+            .left-col {
+                background-image: none;
+            }
+        }
+    }
+}
+
+// Extra Small Phone
+@media (max-width: $screen-xs) {}
+
+// Tablet
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    .gka-two-cols-image-content {
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .btn-container {
+            margin-top: 25px;
+        }
+    }
+}
+
+// Small Screen
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {}
+
+// Small Screen
+@media (min-width: $screen-lg) and (max-width: $screen-lg-max) {}

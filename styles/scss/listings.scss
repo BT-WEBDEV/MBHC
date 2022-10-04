@@ -1,0 +1,126 @@
+.listings-section {
+    padding-bottom: 20px;
+    .listing-header {
+        padding: 22px 115px;
+        border-bottom: 1px solid black;
+
+        .filter {
+            margin: 0 15px;
+        }
+
+        .filter:last-child {
+            margin-right: 0px;
+        }
+
+        .custom-select {
+            border: none;
+            background-image: url(../../images//icons/chevron-down.svg);
+            background-repeat: no-repeat;
+            background-position: center right 5px;
+            background-size: 15px;
+            padding-right: 30px;
+            font-weight: bold;
+        }
+    }
+
+    .listing-container {
+        padding: 15px 115px;
+    }
+
+    .fp-list-v1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 8px;
+        border: 1px solid rgba($color: #dbdbdb, $alpha: 1);
+
+        .image {
+            height: 300px;
+            text-align: center;
+
+            img {
+                margin: 0 auto;
+                // width: auto !important;
+            }
+        }
+
+        .content {
+            padding-top: 15px;
+            padding-bottom: 10px;
+
+            h6 {
+                margin-bottom: 0px;
+                color: black;
+                text-transform: uppercase;
+                font-family: "Gotham", sans-serif;
+                font-weight: bold;
+            }
+
+            .specs {
+                font-size: 14px;
+            }
+
+            .price {
+                margin-top: 5px;
+                font-weight: bold;
+            }
+
+            .link {
+                color: black;
+                font-size: 14px;
+                font-weight: normal;
+
+                img {
+                    margin-left: 10px;
+                    position: relative;
+                    top: -1px;
+                    width: 23px;
+                }
+            }
+        }
+    }
+
+}
+
+#listing-pagination {
+    margin-top: 10px;
+    .page-numbers {
+        border-radius: 50%;
+        padding-top: 1px;
+        margin: 0 4px;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .current {
+        border: 1px solid $l-blue;
+    }
+
+    .next,
+    .prev {
+        position: relative;
+        bottom: 1px;
+    }
+}
+
+//Mobile 
+@media (max-width: $screen-xs-max) {
+    .listings-section {
+        .listing-header {
+            padding: 22px 25px; 
+        }
+
+        .filter-flex-wrap {
+            justify-content: center;
+        }
+    }
+
+    .listings-section {
+        .listing-container {
+            padding: 15px 10px; 
+        }
+    }
+}

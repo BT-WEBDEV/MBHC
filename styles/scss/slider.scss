@@ -1,0 +1,433 @@
+.gka-theme-no-slider {
+    // Navigation Height
+    height: 95.95px;
+}
+
+.gka-theme-slider {
+
+    .swiper-slide,
+    .image {
+        height: 80vh;
+    }
+
+    .mask {
+        justify-content: center;
+        display: flex;
+        align-items: flex-end;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    .slider-caption {
+        -ms-flex: 1;
+        flex: 1;
+        max-width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        padding: 15px 30px;
+    }
+
+    // Navigation
+    .swiper-button-next,
+    .swiper-button-prev {
+        outline: none;
+
+        &::after {
+            color: rgba($color: white, $alpha: 0.8);
+            font-size: 30px;
+        }
+    }
+
+    .swiper-button-next {
+        right: 30px;
+    }
+
+    .swiper-button-prev {
+        left: 30px;
+    }
+
+    // Pagination
+    .swiper-pagination-bullet {
+        opacity: .5;
+        outline: none;
+        background-color: white;
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+    }
+}
+
+.gka-theme-slider-base {
+    background-image: linear-gradient(rgba($color: #00080B, $alpha: 0.7), rgba($color: #00080B, $alpha: 0.7)), url(../../images/our-process/page-list.jpg);
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+
+    #scroll {
+        // position: absolute;
+        bottom: 30px;
+        width: 80px;
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .pagination {
+        justify-content: center;
+        position: static; 
+        color: white;
+        font-family: 'Bodoni Moda', serif;
+        display: flex;
+        align-items: flex-end;
+        font-size: 14px;
+
+        .active {
+            font-size: 24px;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        outline: none;
+        position: static;
+        margin: 0px;
+        width: 35px;
+
+        img {
+            width: 35px;
+        }
+
+        &::after {
+            content: ""
+        }
+    }
+
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+        opacity: 0.6;
+    }
+}
+
+.gka-theme-slider-v2 {
+    flex-direction: column;
+
+    .slider-caption {
+        color: white;
+
+        h1 {
+            font-size: 70px;
+        }
+
+        .custom-btn {
+            background-color: black;
+            margin-top: 40px;
+        }
+    }
+}
+
+.gka-theme-slider-v3 {
+    padding-top: 60px;
+    flex-direction: column;
+
+    .col-image {
+        padding: 0px;
+    }
+
+    .slider-caption {
+        color: white;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        h1 {
+            font-size: 70px;
+            width: 85%;
+            margin-bottom: 30px;
+        }
+
+        .desc {
+            padding-left: 80px;
+        }
+
+        .custom-btn {
+            background-color: black;
+            margin-top: 30px;
+            margin-bottom: 30px; 
+        }
+    }
+
+    .controls {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+.gka-theme-slider-v5 {
+    height: 80vh;
+    align-items: flex-start;
+
+    .controls {
+        width: calc(50% - 15px);
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    .gka-theme-listing-swiper-container {
+        margin-top: 95.95px;
+        .image {
+            height: 520px;
+        }
+    }
+
+    .thumbsSlider {
+        margin-top: 10px;
+        width: calc(50% - 15px);
+    }
+}
+
+// Mobile
+@media (max-width: $screen-xs-max) {
+    .gka-theme-slider-base {
+        #scroll {
+            bottom: 20px;
+            width: 55px;
+        }
+    }
+
+    .controls {
+        .pagination {
+            font-size: 12px;
+
+            .active {
+                font-size: 20px;
+            }
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 25px;
+
+            img {
+                width: 25px;
+            }
+        }
+    }
+
+    .gka-theme-slider-v2 {
+        padding-top: 20px;
+
+        .slider-caption {
+            margin-top: 15px;
+            text-align: center;
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .custom-btn {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .gka-theme-slider-v2 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        height: auto;
+
+        .slider-caption {
+            margin-top: 15px;
+            text-align: center;
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .custom-btn {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .gka-theme-slider-v3 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        height: auto;
+
+        .col-image {
+            padding: 15px;
+        }
+
+        .slider-caption {
+            margin-top: 15px;
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            h1 {
+                font-size: 28px;
+                margin-bottom: 20px;
+                width: auto;
+            }
+
+            .desc {
+                padding-left: 0px;
+            }
+
+            .custom-btn {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .gka-theme-slider-v5 {
+        padding-top: 80px; 
+        padding-bottom: 80px; 
+        height: auto; 
+
+        .gka-theme-listing-swiper-container {
+            margin-top: 95.95px;
+            .image {
+                height: 330px;
+            }
+        }
+    }
+}
+
+// Tablet
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    .gka-theme-slider-base {
+        #scroll {
+            bottom: 20px;
+            width: 60px;
+        }
+    }
+
+    .gka-theme-slider-v2 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        height: auto;
+
+        .slider-caption {
+            h1 {
+                font-size: 40px;
+            }
+
+            .custom-btn {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .gka-theme-slider-v3 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        height: auto;
+
+        .col-image {
+            padding: 15px;
+        }
+
+        .slider-caption {
+            margin-top: 15px;
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            h1 {
+                font-size: 40px;
+                margin-bottom: 20px;
+                width: auto;
+            }
+
+            .desc {
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+// Small Screen
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+    .gka-theme-slider-base {
+        #scroll {
+            width: 70px;
+        }
+    }
+
+    .gka-theme-slider-v2 {
+        .slider-caption {
+            h1 {
+                font-size: 48px;
+            }
+
+            .custom-btn {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .gka-theme-slider-v3 {
+
+        .slider-caption {
+            margin-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            h1 {
+                font-size: 48px;
+                margin-bottom: 20px;
+                width: 80%;
+            }
+
+            .desc {
+                padding-left: 40px;
+            }
+        }
+    }
+}
+
+// Small Screen
+@media (min-width: $screen-lg) and (max-width: $screen-lg-max) {
+    .gka-theme-slider-base {
+        #scroll {
+            width: 70px;
+        }
+    }
+
+    .gka-theme-slider-v2 {
+        .slider-caption {
+            h1 {
+                font-size: 58px;
+            }
+
+            .custom-btn {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .gka-theme-slider-v3 {
+
+        .slider-caption {
+            padding-left: 25px;
+            padding-right: 25px;
+
+            h1 {
+                font-size: 58px;
+            }
+
+            .desc {
+                padding-left: 60px;
+            }
+        }
+    }
+}

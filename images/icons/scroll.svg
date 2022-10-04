@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="82.972" viewBox="0 0 120 82.972">
+  <g id="Group_1382" data-name="Group 1382" transform="translate(-900 -937.945)">
+    <text id="Scroll_down_" data-name="Scroll down " transform="translate(960 1017.918)" fill="#fff" font-size="12" font-family="Helvetica" letter-spacing="0.2em"><tspan x="-59.319" y="0">SCROLL DOWN </tspan></text>
+    <g id="Group_1251" data-name="Group 1251" transform="translate(295.188 136.948)">
+      <g id="Group_1250" data-name="Group 1250" transform="translate(650.492 800.998)">
+        <path id="Path_10171" data-name="Path 10171" d="M664.811,801a14.335,14.335,0,0,0-14.319,14.319v20.82a14.319,14.319,0,1,0,28.639,0v-20.82A14.335,14.335,0,0,0,664.811,801Zm12.063,35.139a12.063,12.063,0,1,1-24.127,0v-20.82a12.063,12.063,0,0,1,24.127,0Z" transform="translate(-650.492 -800.998)" fill="#fff"/>
+        <path id="Path_10172" data-name="Path 10172" d="M688.619,827.061v20.82a12.063,12.063,0,0,1-24.127,0v-20.82a12.063,12.063,0,1,1,24.127,0Z" transform="translate(-662.236 -812.742)" fill="#fff" opacity="0.2"/>
+      </g>
+      <rect id="Rectangle_1823" data-name="Rectangle 1823" width="4.849" height="8.984" rx="2.424" transform="translate(662.459 811.681)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
