@@ -63,6 +63,18 @@ get_header();
                 <div class="desc">
                     <?php the_field("mbhc_description"); ?>
                 </div>
+                
+                
+                <div class="specs d-flex justify-content-center" style="gap:20px;"> 
+                    <?php if( get_field('floorplan_pdf_1') ): ?>
+                        <a href="<?php the_field('floorplan_pdf_1'); ?>" target="_blank" class="btn custom-btn waves-effect waves-light">View Floor Plans</a>
+                    <?php endif; ?>
+                    
+                    <?php if( get_field('floorplan_pdf_2') ): ?>
+                        <a href="<?php the_field('floorplan_pdf_2'); ?>" target="_blank" class="btn custom-btn waves-effect waves-light">View Additional Plans</a>
+                    <?php endif; ?>
+                </div>
+
             </div>
         </section>
         <!-- #Additional Content -->
