@@ -19,7 +19,7 @@
                             This efficient resource offsets energy consumption, 
                             creating a more comfortable and sustainable home without breaking the bank.
                             </p>
-                            <a href="/special-features" class="btn custom-btn text-white">MORE INFO</a>
+                            <a href="/energizero-homes" class="btn custom-btn text-white">MORE INFO</a>
                     </div>
                 </div>
             </div>
@@ -38,17 +38,17 @@
                             Our thoughtfully designed floor plans are conveniently spacious, equipped with 
                             everything you would find in a single family home, and are built to last for generations.
                             </p>
-                            <a href="/special-features" class="btn custom-btn text-white">MORE INFO</a>
+                            <a href="/accessory-dwelling-units" class="btn custom-btn text-white">MORE INFO</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row mt-5">
             <div class="col-lg-6">
-                <h1 class="text-l-blue">Additional Features</h1>
-                <div class="feature-list">
+                <h1 class="text-l-blue d-none">Additional Features</h1>
+                <div class="feature-list" style="margin-top:90px;">
                     <div class="image z-depth-1-half">
-                        <img src="<?php echo get_template_directory_uri(). "/images/special-features-1-sm.jpg" ?>" alt=""
+                        <img src="<?php echo get_template_directory_uri(). "/images/accessibility-sm.jpg" ?>" alt=""
                             class="img-fluid">
                     </div>
                     <div class="content text-white text-center">
@@ -67,14 +67,14 @@
             <div class="col-lg-6">
                 <div class="feature-list">
                     <div class="image z-depth-1-half">
-                        <img src="<?php echo get_template_directory_uri(). "/images/special-features-2-sm.jpg" ?>" alt=""
+                        <img src="<?php echo get_template_directory_uri(). "/images/multigen-sm.jpg" ?>" alt=""
                             class="img-fluid">
                     </div>
                     <div class="content text-white text-center">
                         <h4>Multigenerational Homes</h3>
                             <hr>
                             <p>
-                            Our Hometown Collection supports multigenerational living. 
+                            Hometown Collection supports multigenerational living. 
                             Customize your floor plan to suit your entire family, whether you’re raising young children or aging in place. 
                             Our universal design offers options for dual owner’s suites, private living spaces, and specialized accessibility. 
                             Contact us to learn more about how we can build your family’s unique home!
