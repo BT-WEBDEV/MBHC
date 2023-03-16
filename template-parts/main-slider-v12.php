@@ -41,7 +41,7 @@
                             <div class="slider-caption">
                                 <h1>Accessible Home&nbsp;Building</h1>
                                 <div class="desc">
-                                    <p>Mitchell & Best is proud to offer accessibility options for all our homeowners. 
+                                    <p>Hometown Collection is proud to offer accessibility options for all our homeowners. 
                                         Work with our designers and builders to create a home customized to your needs. 
                                         Our floor plans and features can support aging in place, wheelchair accessibility, and mobility accommodations. 
                                         Reach out to learn more about our accessible homes and collaborative building process! 
