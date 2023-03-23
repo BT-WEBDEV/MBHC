@@ -43,7 +43,7 @@
                                 <div class="desc">
                                     <p>We take pride in building homes that meet the needs of today’s home buyer, but we also strive to create spaces that will exceed their future expectations. 
                                         From sustainable luxury to comfortable privacy, the Hometown Collection is excited to offer these distinguished, life-enhancing special features to our homeowners. 
-                                        Here’s everything you need to know about our EnergiZer0 Homes and Accessory Dwelling Units! 
+                                        Here’s everything you need to know about our EnergiZer0 Homes. 
                                     </p>
                                     <a href="" class="btn custom-btn text-l-blue">MORE INFO</a>
                                 </div>

@@ -42,9 +42,8 @@
                                 <h1>EVERYTHING YOU’VE BEEN SEARCHING FOR</h1>
                                 <div class="desc">
                                     <p>The Hometown Collection is a concept 30 years in the making. 
-                                        As an affiliate of Mitchell & Best Homes, 
-                                        we hold over 45 years of experience in the home building industry, 
-                                        giving us a unique insight into the current housing market. 
+                                        Born out of Mitchell and Best Homes and its 45 year history in the home building industry 
+                                        gives us unique insight into the current housing market. 
                                         A newly built home that is both beautifully designed and 
                                         reasonably priced was lacking for potential buyers, 
                                         and we are building the solution.  
