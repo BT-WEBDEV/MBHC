@@ -3,6 +3,7 @@ $(document).ready(function () {
     $('.mdb-select').materialSelect();
 
 	$('#ah-price-filter, #ah-beds-filter, #ah-baths-filter, #ah-sqft-filter').on('change', function() {
+
 		price = $('#ah-price-filter').val();
 		switch (price) {
 			case "<500":
@@ -86,13 +87,13 @@ $(document).ready(function () {
         // Beds condition
 
 		$('#ah-filter-wrap').children().hide();
-		if(window.location.pathname != '/available-homes/') {
+		if(window.location.pathname != '/available-homes/') { 
 			$('.listing-wrapper:first-child').show();
 		}
 
 		$('#ah-filter-wrap')
 			.children()
-			.filter(function() {   
+			.filter(function() {  
 
                 bedsCondition = false;
                 if(String($(this).data('beds')).includes('-')) {
@@ -121,11 +122,25 @@ $(document).ready(function () {
                         bathsCondition = true;
                     }
                 }
-				if(
+
+				sqftCondition = false;
+				if(String($(this).data('sqft')).includes('-')) {
+					sqftArray = $(this).data('sqft').split('-');
+					for (i = parseInt(sqftArray[0]); i <= parseInt(sqftArray[1]); i++) {
+						if(i >= sqftCondition1 && i <= sqftCondition2) {
+							sqftCondition = true;
+						}
+					};                  
+				} else {
+					if($(this).data('sqft') >= sqftCondition1 && $(this).data('sqft') <= sqftCondition2) {
+						sqftCondition = true;
+					}
+				}
+				if (
 					($(this).data('price') >= priceCondition1 && $(this).data('price') <= priceCondition2) &&
 					(bedsCondition) &&
 					(bathsCondition) &&
-					($(this).data('sqft') >= sqftCondition1 && $(this).data('sqft') <= sqftCondition2)
+					(sqftCondition) 
 				) {
 					return $(this).attr('id');
 				}
