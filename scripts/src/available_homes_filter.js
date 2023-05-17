@@ -136,6 +136,7 @@ $(document).ready(function () {
 						sqftCondition = true;
 					}
 				}
+				
 				if (
 					($(this).data('price') >= priceCondition1 && $(this).data('price') <= priceCondition2) &&
 					(bedsCondition) &&

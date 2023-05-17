@@ -121,13 +121,28 @@ $(document).ready(function () {
                         bathsCondition = true;
                     }
                 }
+
+				sqftCondition = false;
+				if(String($(this).data('sqft')).includes('-')) {
+					sqftArray = $(this).data('sqft').split('-');
+					for (i = parseInt(sqftArray[0]); i <= parseInt(sqftArray[1]); i++) {
+						if(i >= sqftCondition1 && i <= sqftCondition2) {
+							sqftCondition = true;
+						}
+					};                  
+				} else {
+					if($(this).data('sqft') >= sqftCondition1 && $(this).data('sqft') <= sqftCondition2) {
+						sqftCondition = true;
+					}
+				}
+
 				if(
 					($(this).data('price') >= priceCondition1 && $(this).data('price') <= priceCondition2) &&
 					(bedsCondition) &&
 					(bathsCondition) &&
-					($(this).data('sqft') >= sqftCondition1 && $(this).data('sqft') <= sqftCondition2)
+					(sqftCondition) 
 				) {
-					return $(this).attr('id');
+					return $(this).attr('id'); 
 				}
 			}).show().css('animation-delay', '0s').css('animation-name', 'fadeInUp');
 		
