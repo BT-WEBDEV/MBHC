@@ -54,6 +54,26 @@
                 }
             }
 
+            .community-interest {
+                .wpforms-field-label {
+                    position: static;
+                    margin-top: 20px; 
+                    margin-bottom: 20px; 
+                    -webkit-transition: .2s ease-out;
+                    -o-transition: .2s ease-out;
+                    transition: .2s ease-out;
+                    cursor: text;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                }
+
+                ul, li {
+                    display: inline;
+                    margin-right: 40px !important;  
+                }
+            }
+
             .md-form {
                 position: relative !important;
                 margin-top: 0.9rem !important;
@@ -94,11 +114,26 @@
 @media (max-width: $screen-xs-max) {
     .contact-form {
         padding: 40px 20px;
+
+        div.wpforms-container-full {
+            .wpforms-form {
+          
+                .community-interest {
+                    ul, li {
+                        display: block;
+                        margin-right: 40px !important;  
+                    }
+                }
+    
+            }
+        }
     }
 }
 
 // Extra Small Phone
-@media (max-width: $screen-xs) {}
+@media (max-width: $screen-xs) {
+
+}
 
 // Tablet
 @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {}

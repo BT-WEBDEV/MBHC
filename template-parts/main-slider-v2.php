@@ -42,6 +42,7 @@
                                 <h1 class="home-headline">Exceeding
                                     expectations,
                                     not&nbsp;budgets</h1>
+                                <p>Building homes throughout most of Maryland and Northern Virginia.</p>
                                 <a href="/our-process/" class="btn custom-btn text-l-blue">MORE INFO</a>
                             </div>
                         </div>
